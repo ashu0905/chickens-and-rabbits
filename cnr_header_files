@@ -1,0 +1,9 @@
+chickens = int
+rabbits = int
+def count_animals(heads, legs):
+    heads = int(heads)
+    legs = int(legs)
+    for chickens in range(0, heads, 1):
+        rabbits = heads - chickens
+        if (((2*chickens) + (4*rabbits)) == legs):
+            return "Chickens in farm = {}\nRabbits in farm = {}".format(chickens, rabbits)
